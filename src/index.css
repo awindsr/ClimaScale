@@ -1,0 +1,32 @@
+* {
+  font-family: "Signika", sans-serif;
+  /* font-family: "Signika Negative", sans-serif; */
+  /* font-family: "M PLUS Rounded 1c", sans-serif; */
+  /* background-color: rgb(230, 234, 239); */
+}
+
+.next {
+  padding: 4px;
+  position: fixed;
+  top: 74%;
+  left: 76%;
+  width: 14%;
+  border-radius: 10px;
+  transition: 0.5s;
+  background-color: rgb(240, 224, 203);
+}
+
+.next:hover {
+  font-weight: 800;
+  transition: 0.8s;
+  letter-spacing: 1.3px;
+
+  background-image: linear-gradient(
+    to right,
+    #a1c4fd 0%,
+    #c2e9fb 51%,
+    #a1c4fd 100%
+  );
+  width: 16%;
+  border: dotted 2.6px rgb(36, 65, 124);
+}

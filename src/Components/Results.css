@@ -1,0 +1,80 @@
+.results {
+    margin-top: 15%;
+    display: grid;
+    grid-template-rows: .1fr .2fr .2fr .7fr .5fr;
+    border: 1px solid #ede09a;
+    border-radius: 5%;
+    background-color: #c0becaa8;
+    color: #140f44;
+}
+.results h2 {
+    text-align: center;
+    margin: 3%;
+}
+
+.results-chart {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.monthly {
+    text-align: center;
+}
+.monthly span {
+    font-size: 25px;
+}
+
+.monthly h4 {
+    border: 1px solid black;
+    padding: 10%;
+    font-size: 1.5em;
+    transform: skew(-20deg);
+    width: 100%;
+    background-color: #140f44;
+    color: #f4e272;
+}
+
+.flags {
+    grid-row: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    background-color: #eeede1;
+    width: 90%;
+    justify-self: center;
+    border-radius: 5%;
+    border: 1px solid #140f44;
+}
+.flags span img {
+    height: 90px;
+    width: 75%;
+}
+.flags span {
+    display: grid;
+  
+}
+
+.flags span p {
+    display: flex;
+}
+
+.flags .arrow {
+    height: 30px;
+    width: 25px;
+    padding-left: 10px;
+}
+
+.result-links {
+    grid-row: 5;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.disclaimer {
+    text-align: center;
+    align-self: center;
+}
+
+

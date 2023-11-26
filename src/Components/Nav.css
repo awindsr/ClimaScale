@@ -1,0 +1,38 @@
+nav {
+  display: grid;
+  grid-template-columns: 0.5fr 3fr 0.5fr;
+  align-items: center;
+  margin-bottom: 0px;
+  background-color: rgb(247, 247, 245);
+}
+nav h1 {
+  justify-self: center;
+  color: rgb(24, 56, 119);
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+}
+nav button {
+  all: unset;
+}
+
+.menu {
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  border: 1px solid black;
+  position: fixed;
+  z-index: 300;
+  width: 20vw;
+  height: 15vh;
+  left: 77%;
+  top: 8%;
+  background-color: rgb(232, 237, 240);
+  border-radius: 8px;
+}
+
+.menu a {
+  font-size: 1.3em;
+  text-decoration: none;
+  color: rgb(24, 56, 119);
+}

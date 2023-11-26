@@ -1,0 +1,81 @@
+.selections {
+    width: 80vw;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 20px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .selections {
+        width: 80vw;
+        margin: auto;
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    
+        gap: 20px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .selections {
+        width: 80vw;
+        margin: auto;
+    
+        display: grid;
+        grid-template-columns: 1fr;
+    
+        gap: 20px;
+        padding: 10px;
+    }
+}
+
+.transpo-form {
+    text-align: center;
+}
+
+.transpo-image-container {
+    width: 280px; 
+    height: 150px;
+    margin: auto;
+
+    padding-top: 50px;;
+}
+
+.transpo-image {
+    width: 100%;
+    height: 100%;
+
+    background-image: url("/public/commuting.gif");
+    background-position: center;
+    background-size: cover;
+}
+
+.selections label:hover {
+    box-shadow: 4px 4px 3px black;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.selections section {
+    display: block;
+    padding: 7px;
+}
+
+.selections p {
+    display: block;
+
+    font-size: 15px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    text-align: left;
+}
+
+.transpo-form p {
+    margin-top: 40px;
+}

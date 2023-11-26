@@ -1,0 +1,43 @@
+{
+  "name": "climatehack",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "5.0.1",
+    "serve": "^11.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "serve": "serve -s build",
+    "build-and-serve": "npm run build && npm run serve"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "plugin:jsx-a11y/recommended"
+    ],
+    "plugins": [
+      "jsx-a11y"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

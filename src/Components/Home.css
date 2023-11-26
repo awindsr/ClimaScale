@@ -1,0 +1,30 @@
+.home {
+  display: grid;
+  grid-template-rows: 1fr 1fr 0.5fr;
+  justify-items: center;
+  align-items: center;
+  background-color: rgb(247, 247, 245);
+  height: 90vh;
+  background-image: url("/public/carbon-home.gif");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.home a {
+  grid-row: 2;
+  margin-top: 22rem;
+  text-decoration: none;
+  color: rgb(24, 56, 119);
+  font-weight: 800;
+}
+.start {
+  all: unset;
+  font-size: 3em;
+  height: fit-content;
+  width: fit-content;
+}
+
+.start a {
+  text-decoration: none;
+}

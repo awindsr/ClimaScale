@@ -1,0 +1,34 @@
+.general {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  background-image: url("/public/sustainable.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.general_title {
+  color: rgb(53, 53, 53);
+  font-size: 1.4rem;
+  background-color: rgb(195, 195, 195);
+  opacity: 70%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 5px;
+}
+
+.general_q {
+  color: rgb(60, 58, 58);
+}
+
+.general_form {
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+  background-color: rgb(195, 195, 195);
+  opacity: 80%;
+  padding: 4px;
+}
