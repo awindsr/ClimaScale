@@ -58,10 +58,10 @@ export default function Results() {
         <span>
           <img src={columbia} alt="flag" />
           <p>
-            <span>Columbia (1.8) </span>
+            <span>India (1.91) </span>
             <img
               className="arrow"
-              src={compare > 1.8 ? up : down}
+              src={compare > 1.91 ? up : down}
               alt="arrow"
             />
           </p>
