@@ -70,7 +70,7 @@ export default function Transportation() {
             value={checked.gas_car}
             onChange={handleCheck}
           />{" "}
-          Gas
+          Petrol/Diesel
           <section>
             <AiOutlineCar size={iconSize} />
             <BiGasPump size={iconSize} />

@@ -31,6 +31,7 @@ export default function Results() {
             {compare.toFixed(2)}
           </span>
         </section>
+        
       </div>
       <section className="flags">
         <span>

@@ -14,6 +14,7 @@ function Home(props) {
         href="https://www.conservation.org/stories/what-is-a-carbon-footprint"
         target="_blank"
         rel="noreferrer"
+        id="carbon-footprint"
       >
         What is Carbon Footprint?
       </a>

@@ -15,16 +15,40 @@
   grid-row: 2;
   margin-top: 22rem;
   text-decoration: none;
-  color: rgb(24, 56, 119);
+  color: rgb(241, 241, 241);
   font-weight: 800;
 }
+
+.home #carbon-footprint{
+  color: #000000;
+}
 .start {
-  all: unset;
+  background-color: #222222;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  text-decoration: none; /* Remove underlines from the link */
+  display: inline-block;
   font-size: 3em;
   height: fit-content;
   width: fit-content;
 }
 
 .start a {
+  text-decoration: none;
+}
+
+.start:hover {
+  background-color: #000000;
+  transform: translateY(-2px);
+}
+.start:active {
+  background-color: #222222;
+  transform: translateY(2px);
+}
+.start-link {
+  color: white;
   text-decoration: none;
 }
