@@ -2,7 +2,7 @@ import React from 'react';
 import { useContextProvider } from './Provider.js';
 import usa from '../assets/us-flag.png';
 import japan from '../assets/japan-flag.png';
-import columbia from '../assets/columbia-flag.png';
+import india from '../assets/india-flag.png';
 import bangladesh from '../assets/bangladesh-flag.png';
 import down from '../assets/green-arrow.png';
 import up from '../assets/red-arrow.png';
@@ -110,7 +110,7 @@ export default function Results() {
           </p>
         </span>
         <span>
-          <img src={columbia} alt="flag" />
+          <img src={india} alt="flag" />
           <p>
             <span>India (1.91) </span>
             <img
