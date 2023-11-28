@@ -12,11 +12,6 @@ The development of **ClimaScale** was executed utilizing an array of technologie
 ## Technical Challenges
 - The project encountered complexities in reconciling disparate measurement systems for carbon emissions (Lbs, Tons, etc.).
 
-## Milestones Achieved
-- Successful creation of a fully operational application within a constrained timeframe.
-- Establishment and maintenance of an efficient GitHub workflow.
-- Effective collaboration within a five-developer team, fostering shared communication and learning experiences.
-
 ## Knowledge Gained
 - In-depth understanding of carbon footprint metrics and their significance.
 - Strategies for reducing carbon emissions through incremental lifestyle adjustments.
