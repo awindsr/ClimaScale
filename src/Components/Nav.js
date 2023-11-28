@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import {GiHamburgerMenu} from "react-icons/gi"
 import {FcGlobe} from "react-icons/fc"
+import logo from '../assets/logo.png';
 import "./Nav.css"
 
 function Nav(props) {
@@ -9,7 +10,9 @@ function Nav(props) {
 
     return (
         <nav>
-            <FcGlobe size = {"50px"} />
+            <div className="logocontainer" id="logocontainer">
+                <img id="logo" src={logo} alt="flag"/>
+            </div>
            <h1>ClimaScale</h1>
            <button
            onClick = {() => setNavBar(!navbar) }>

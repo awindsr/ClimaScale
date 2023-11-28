@@ -39,3 +39,15 @@ nav button {
   text-decoration: none;
   color: rgb(24, 56, 119);
 }
+
+
+#logocontainer{
+  width: 50px;
+  height: 50px;
+  background-color: rgb(247, 247, 245);
+}
+#logo{
+  width: 100%;
+  background-color: rgb(247, 247, 245);
+  height: 100%;
+}
