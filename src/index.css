@@ -6,27 +6,24 @@
 }
 
 .next {
-  padding: 4px;
-  position: fixed;
-  top: 74%;
-  left: 76%;
-  width: 14%;
-  border-radius: 10px;
-  transition: 0.5s;
-  background-color: rgb(240, 224, 203);
+  background-color: #222222;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  text-decoration: none; /* Remove underlines from the link */
+  display: inline-block;
+  font-size: 1em;
+  height: fit-content;
+  width: fit-content;
 }
 
 .next:hover {
-  font-weight: 800;
-  transition: 0.8s;
-  letter-spacing: 1.3px;
-
-  background-image: linear-gradient(
-    to right,
-    #a1c4fd 0%,
-    #c2e9fb 51%,
-    #a1c4fd 100%
-  );
-  width: 16%;
-  border: dotted 2.6px rgb(36, 65, 124);
+  background-color: #000000;
+  transform: translateY(-2px);
+}
+.next:active {
+  background-color: #222222;
+  transform: translateY(2px);
 }

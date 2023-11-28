@@ -215,15 +215,14 @@ export default function Food() {
             </section>
           </label>
         </div>
+        <button className="next" onClick={handleSubmit}>
+          Next!
+        </button>
 
         <div className="food-image-container">
           <div className="food-image"></div>
         </div>
         <p>Tip: Lower your Carbon 👣 by eating locally sourced food!</p>
-
-        <button className="next" onClick={handleSubmit}>
-          Next!
-        </button>
       </form>
     </div>
   );

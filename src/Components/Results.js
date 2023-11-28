@@ -1,17 +1,71 @@
-import { useContextProvider } from "./Provider.js";
-import usa from "../assets/us-flag.png";
-import japan from "../assets/japan-flag.png";
-import columbia from "../assets/columbia-flag.png";
-import bangladesh from "../assets/bangladesh-flag.png";
-import down from "../assets/green-arrow.png";
-import up from "../assets/red-arrow.png";
-import "./Results.css";
-import { Link } from "react-router-dom";
-import { HiOutlineLightBulb } from "react-icons/hi";
+import React from 'react';
+import { useContextProvider } from './Provider.js';
+import usa from '../assets/us-flag.png';
+import japan from '../assets/japan-flag.png';
+import columbia from '../assets/columbia-flag.png';
+import bangladesh from '../assets/bangladesh-flag.png';
+import down from '../assets/green-arrow.png';
+import up from '../assets/red-arrow.png';
+import './Results.css';
+import { Link } from 'react-router-dom';
+import { HiOutlineLightBulb } from 'react-icons/hi';
+
+function saveDataToServer(monthlyValue, annualValue) {
+  // Construct the data object to send
+  const data = {
+    monthly: monthlyValue,
+    annual: annualValue
+  };
+
+  // Use fetch to send the data to the server
+  fetch('/api/save-data', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('Success:', data);
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  });
+}
+
 
 export default function Results() {
   const { result, setResult, categories } = useContextProvider();
+  const monthlyValue = (result / 2000).toFixed(2);
   const compare = (result * 12) / 2000;
+  const annualValue = compare.toFixed(2);
+
+  const handleSubmit = () => {
+    saveDataToServer(monthlyValue, annualValue);
+  };
+
+  const saveDataToServer = (monthly, annual) => {
+    const data = {
+      monthly,
+      annual
+    };
+
+    fetch('/api/save-data', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+  };
 
   return (
     <div className="results">
@@ -23,15 +77,14 @@ export default function Results() {
       <div className="results-chart">
         <section className="monthly">
           <h4>Monthly</h4>
-          <span>{(result / 2000).toFixed(2)}</span>
+          <span>{monthlyValue}</span>
         </section>
         <section className="monthly">
           <h4>Annually</h4>
-          <span style={compare > 13.68 ? { color: "red" } : { color: "green" }}>
-            {compare.toFixed(2)}
+          <span style={compare > 13.68 ? { color: 'red' } : { color: 'green' }}>
+            {annualValue}
           </span>
         </section>
-        
       </div>
       <section className="flags">
         <span>
@@ -82,10 +135,12 @@ export default function Results() {
       <section className="result-links">
         <Link to="/">Re-Take the Quiz</Link>
         <Link to="/tips">
-          Helpful Tips <HiOutlineLightBulb size={"17px"} />
+          Helpful Tips <HiOutlineLightBulb size={'17px'} />
         </Link>
       </section>
-
+      
+      {/* <button onClick={handleSubmit}>Submit Results</button> */}
+      
       <span className="disclaimer">**These values are estimates**</span>
     </div>
   );

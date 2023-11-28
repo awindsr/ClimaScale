@@ -1,5 +1,5 @@
 .results {
-    margin-top: 2%;
+    /* margin-top: 2%; */
     display: grid;
     grid-template-rows: auto;
     border: none;
@@ -9,6 +9,8 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 20px;
+    /* Responsive padding */
+    padding: 2% 5%;
 }
 
 .results h2 {
@@ -22,6 +24,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+}
+
+/* Responsive chart for small screens */
+@media (max-width: 768px) {
+    .results-chart {
+        grid-template-columns: 1fr; /* Stack them on top of each other */
+    }
 }
 
 .monthly {
@@ -55,6 +64,13 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
+/* Responsive flags for small screens */
+@media (max-width: 768px) {
+    .flags {
+        flex-direction: column; /* Stack flags vertically */
+    }
+}
+
 .flags img {
     max-height: 90px;
     width: auto;
@@ -72,9 +88,28 @@
     padding: 20px;
 }
 
+/* Responsive result links for small screens */
+@media (max-width: 768px) {
+    .result-links {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center;
+        padding: 10px;
+    }
+}
+
 .disclaimer {
     text-align: center;
     margin-top: 20px;
     font-size: 0.8em;
     color: #777;
+}
+
+/* General responsive text sizing */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Smaller font size for small screens */
+    }
+    .monthly span {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
 }

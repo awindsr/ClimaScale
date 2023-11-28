@@ -147,15 +147,16 @@ export default function Transportation() {
           </section>
         </label>
       </div>
+      <button className="next" type="sumbit">
+        Next!
+      </button>
 
       <div className="transpo-image-container">
         <div className="transpo-image"></div>
       </div>
       <p>Tip: Lower your Carbon 👣 by walking or biking to work!</p>
 
-      <button className="next" type="sumbit">
-        Next!
-      </button>
+      
     </form>
   );
 }

@@ -1,6 +1,9 @@
 nav {
-  display: grid;
-  grid-template-columns: 0.5fr 3fr 0.5fr;
+  /* display: grid;
+  grid-template-columns: 0.5fr 3fr 0.5fr; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   align-items: center;
   margin-bottom: 0px;
   background-color: rgb(247, 247, 245);

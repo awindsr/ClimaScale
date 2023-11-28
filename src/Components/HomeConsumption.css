@@ -14,15 +14,32 @@ nav {
   width: 80%;
 }
 
+/* Centering the form on smaller screens and removing the background */
+@media (max-width: 768px) {
+  .homeConsumption {
+    background-image: none;
+    width: 95%; /* Adjust the width to better fit smaller screens */
+  }
+}
+
 .home_form {
   display: flex;
   flex-direction: column;
   line-height: 1.8rem;
   background-color: rgb(243, 238, 231);
   opacity: 80%;
-  padding: 4px;
+  padding: .5rem;
   border-radius: 16px;
   width: 50%;
+  margin-left: auto; /* Center form */
+  margin-right: auto; /* Center form */
+}
+
+/* Adjust form width on smaller screens */
+@media (max-width: 768px) {
+  .home_form {
+    width: 80%; /* Increase width percentage for smaller screens */
+  }
 }
 
 .home_q {
@@ -46,4 +63,8 @@ input[type="checkbox"] {
   height: 1.15em;
   border: 0.15em solid rgb(38, 41, 224);
   border-radius: 0.16em;
+}
+
+#nextbtn {
+  margin-top: 5px;
 }

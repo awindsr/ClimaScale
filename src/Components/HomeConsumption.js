@@ -90,7 +90,7 @@ export default function HomeConsumption() {
             />
             Propane
           </label>
-          <button className="next" onClick={handleChecked}>
+          <button className="next" id="nextbtn" onClick={handleChecked}>
             Next!
           </button>
         </form>

@@ -3,7 +3,7 @@
   grid-template-rows: 1fr 1fr 0.5fr;
   justify-items: center;
   align-items: center;
-  background-color: rgb(247, 247, 245);
+  background-color: rgb(253, 253, 254);
   height: 90vh;
   background-image: url("/public/carbon-home.gif");
   background-position: center;
@@ -31,7 +31,7 @@
   cursor: pointer;
   text-decoration: none; /* Remove underlines from the link */
   display: inline-block;
-  font-size: 3em;
+  font-size: 1em;
   height: fit-content;
   width: fit-content;
 }

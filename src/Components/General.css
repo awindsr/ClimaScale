@@ -8,10 +8,12 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 1rem;
+  /* padding: .5rem; */
 }
 
 .general_title {
-  color: rgb(53, 53, 53);
+  color: rgb(0, 0, 0);
   font-size: 1.4rem;
   background-color: rgb(195, 195, 195);
   opacity: 70%;
@@ -21,7 +23,7 @@
 }
 
 .general_q {
-  color: rgb(60, 58, 58);
+  color: rgb(0, 0, 0);
 }
 
 .general_form {
