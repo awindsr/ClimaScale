@@ -42,6 +42,15 @@ export default function HomeConsumption() {
             />
             Coal
           </label>
+          <label htmlFor="electricity (Hydro)">
+            <input
+              type="checkbox"
+              id="electricity (coal)"
+              value={categories.home["Electricity (Hydro)"]}
+              onChange={handleChecked}
+            />
+            Hydro
+          </label>
           <label htmlFor="electricity (natural gas)">
             <input
               type="checkbox"
