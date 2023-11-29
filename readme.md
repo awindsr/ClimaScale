@@ -1,7 +1,7 @@
 Explore [ClimaScale](https://climascale.vercel.app//) and discover its features.
 
 ## Conceptual Genesis
-The genesis of ClimaScale was fueled by the general populace's limited self-awareness regarding their individual contributions to carbon emissions
+The genesis of ClimaScale was fueled by the general populace's limited self-awareness regarding their individual contributions to carbon emissions.
 
 ## Functionality Overview
 **ClimaScale** is engineered to process user-provided data and compute an estimated monthly carbon footprint. The output page delineates the user's annual carbon footprint and contextualizes it by juxtaposing it against various global benchmarks, encompassing low, average, and high emission metrics per capita.
