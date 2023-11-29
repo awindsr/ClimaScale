@@ -23,6 +23,7 @@ const categories= {
     },
     "home": {
       "Electricity (coal)": 1497,
+      "Electricity (Hydro)": 24,
       "Electricity (natural gas)": 937,
       "Electricity (renewable)": 115,
       "Natural gas (heating)": 1308,
