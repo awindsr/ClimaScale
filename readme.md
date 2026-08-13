@@ -1,3 +1,5 @@
+
+
 Explore [ClimaScale](https://climascale.vercel.app//) and discover its features.
 
 ## Conceptual Genesis
@@ -19,3 +21,8 @@ The development of **ClimaScale** was executed utilizing an array of technologie
 ## Future Directions for ClimaScale
 - Integration of a backend system to facilitate data storage, user accounts, and interactive user engagement.
 - Development of an API to further enhance the application's capabilities.
+
+## Installation & Setup
+1. Clone the repository and navigate to the project directory.
+2. Run `npm install` to install dependencies.
+3. Run `npm start` to launch the development server.
